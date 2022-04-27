@@ -15,18 +15,34 @@
     padding:0;
     font-family: "Museo", Arial;
 }
-
 .text-white{
     color: var(--white);
 }
-
 .text-center{
     text-align: center;
 }
+.btn{
+    width: 100%;
+    padding: 15px;
+    font-size:1em;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btn-primary{
+    background: var(--tertiary-color);
+    color: white;
+    border: none;
+}
+.btn-outline{
+    background:transparent;
+    border: 1px solid var(--white);
+}
 
+/* Top level */
 .main-container{
     display: flex;
 }
+/* Left section */
 .banner{
     display:none;
     position: relative;
@@ -37,6 +53,22 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.banner .banner-content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 200px;
+    max-width:345px;
+    margin-bottom: 10%;
+}
+.banner .banner-content .banner-desc{
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+/* Right section */
 .content{
     position: relative;
     width: 100vw;
@@ -55,67 +87,32 @@
     left:0;
     height:100px;
 }
-
 .content .booking-section{
     margin: 4em 2em;
-    max-width:500px
+    max-width:500px;
 }
-
-.title{
+.content .booking-section .title{
     width: 5em;
     margin-top:60px;
     font-size: 2.5em;
     color: var(--primary-color);
 }
-.desc{
+.content .booking-section .desc{
     width: 15em;
     margin:40px 0;
     font-weight: 500;
     color: var(--secondary-color);
 }
-
-.btn{
-    width: 100%;
-    padding: 15px;
-    font-size:1em;
-    font-weight: 600;
-    border-radius: 5px;
-}
-
-.btn-primary{
-    background: var(--tertiary-color);
-    color: white;
-    border: none;
-}
-
-.btn-outline{
-    background:transparent;
-    border: 1px solid var(--white);
-}
-.login{
+.content .booking-section .login{
     margin-top:20px;
     color: var(--secondary-color); 
 }
-
-.login .link{
+.content .booking-section .login .link{
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.banner .banner-content{
-    display:flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    align-items:center;
-    height: 200px;
-    max-width:345px;
-    margin-bottom: 10%;
-}
-.banner .banner-content .banner-desc{
-    color: var(--white);
-    font-size: 1.5em;
-}
+/* For screen width > 700px */
 @media screen and (min-width: 700px) {
     .content{
         width: 53%;
