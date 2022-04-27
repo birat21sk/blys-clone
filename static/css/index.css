@@ -3,6 +3,7 @@
     --secondary-color: #41506f;
     --tertiary-color: #0daec8;
     --white : #fff;
+    --grey: #8b96ad;
 }
 
 @font-face {
@@ -28,6 +29,9 @@
     font-weight: 600;
     border-radius: 5px;
 }
+.btn:hover{
+    cursor:pointer;
+}
 .btn-primary{
     background: var(--tertiary-color);
     color: white;
@@ -46,7 +50,7 @@
 .banner{
     display:none;
     position: relative;
-    width: 47%;
+    width: 40%;
     padding: 30px;
     background-image: url("../media/landing_image.jpg");
     background-size: cover;
@@ -105,17 +109,20 @@
 }
 .content .booking-section .login{
     margin-top:20px;
-    color: var(--secondary-color); 
+    color: var(--grey); 
 }
 .content .booking-section .login .link{
     text-decoration: none;
     color: var(--primary-color);
 }
+.content .booking-section .login .link:hover{
+    text-decoration: underline;
+}
 
 /* For screen width > 700px */
 @media screen and (min-width: 700px) {
     .content{
-        width: 53%;
+        width: 60%;
         height: 100vh;
     }
     .banner{
