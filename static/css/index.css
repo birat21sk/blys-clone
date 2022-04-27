@@ -2,8 +2,10 @@
     --primary-color: #100249;
     --secondary-color: #41506f;
     --tertiary-color: #0daec8;
-    --white : #fff;
-    --grey: #8b96ad;
+    --font-color: #000;
+    --bg-color: #fff; 
+    --grey: #8b96ad; 
+    --bg-color: #fff;
 }
 
 @font-face {
@@ -16,8 +18,11 @@
     padding:0;
     font-family: "Museo", Arial;
 }
+body{
+    background: var(--bg-color);
+} 
 .text-white{
-    color: var(--white);
+    color: #fff;
 }
 .text-center{
     text-align: center;
@@ -39,9 +44,13 @@
 }
 .btn-outline{
     background:transparent;
-    border: 1px solid var(--white);
+    border: 1px solid #fff;
 }
 
+#logo{
+    width:67px;
+    height:38px;
+}
 /* Top level */
 .main-container{
     display: flex;
@@ -68,7 +77,6 @@
     margin-bottom: 10%;
 }
 .banner .banner-content .banner-desc{
-    color: var(--white);
     font-size: 1.5em;
 }
 

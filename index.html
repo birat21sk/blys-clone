@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Wellness At Home | Blys</title>
     <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/dark-theme.css">
     <link rel="icon" href="./static/media/blys-logo.svg">
 </head>
 <body>
@@ -13,18 +14,25 @@
         <div class="banner">
             <div class="banner-content">
                 <img src="./static/media/blys-logo-white.svg" alt="Blys Logo">
-                <h2 class="banner-desc text-center">
+                <h2 class="banner-desc text-center text-white">
                     Organise a Blys massage in the comfort of your office
                 </h2>
                 <button class="btn btn-outline text-white" style="max-width: 150px;">Learn More</button>
             </div>
         </div>
         <div class="content">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <span>Dark Mode</span>
+            </div>
             <img class="decoration-top" src="./static/media/graphics_top.svg" alt="Decoration top">
             <img class="decoration-bottom" src="./static/media/graphics_bottom.svg" alt="Decoration bottom">
 
             <div class="booking-section">
-                <img src="./static/media/blys-logo.svg" alt="Blys Logo">
+                <img id="logo" src="./static/media/blys-logo.svg" alt="Blys Logo">
                 <h1 class="title">Wellness, delivered.</h1>
                 <h3 class="desc">Professional. Friendly. On Time. Book massage, beauty, fitness.</h3>
                 <button class="btn btn-primary">Book your session</button>
@@ -32,5 +40,6 @@
             </div>
         </div>
     </div>
+    <script src="./static/js/app.js"></script>
 </body>
 </html>
