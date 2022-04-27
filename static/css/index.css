@@ -20,6 +20,10 @@
     color: var(--white);
 }
 
+.text-center{
+    text-align: center;
+}
+
 .main-container{
     display: flex;
 }
@@ -90,8 +94,7 @@
 }
 .login{
     margin-top:20px;
-    color: var(--secondary-color);
-    text-align: center;
+    color: var(--secondary-color); 
 }
 
 .login .link{
@@ -104,6 +107,7 @@
     flex-direction: column;
     flex-wrap:wrap;
     justify-content: space-evenly;
+    align-items:center;
     height: 200px;
     max-width:345px;
     margin-bottom: 10%;
