@@ -1,0 +1,128 @@
+:root{
+    --primary-color: #100249;
+    --secondary-color: #41506f;
+    --tertiary-color: #0daec8;
+    --white : #fff;
+}
+
+@font-face {
+    font-family: Museo;
+    src: url("../media/Museo-Regular.otf");
+  }
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Museo", Arial;
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.main-container{
+    display: flex;
+}
+.banner{
+    display:none;
+    position: relative;
+    width: 47%;
+    padding: 30px;
+    background-image: url("../media/landing_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content .decoration-top{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100px;
+}
+.content .decoration-bottom{
+    position: absolute;
+    bottom:0;
+    left:0;
+    height:100px;
+}
+
+.content .booking-section{
+    margin: 4em 2em;
+    max-width:500px
+}
+
+.title{
+    width: 5em;
+    margin-top:60px;
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+.desc{
+    width: 15em;
+    margin:40px 0;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.btn{
+    width: 100%;
+    padding: 15px;
+    font-size:1em;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background: var(--tertiary-color);
+    color: white;
+    border: none;
+}
+
+.btn-outline{
+    background:transparent;
+    border: 1px solid var(--white);
+}
+.login{
+    margin-top:20px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.login .link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.banner .banner-content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    height: 200px;
+    max-width:345px;
+    margin-bottom: 10%;
+}
+.banner .banner-content .banner-desc{
+    color: var(--white);
+    font-size: 1.5em;
+}
+@media screen and (min-width: 700px) {
+    .content{
+        width: 53%;
+        height: 100vh;
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .content .booking-section{
+    margin-left: 120px;
+  }
+}
