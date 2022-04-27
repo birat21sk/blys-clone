@@ -130,7 +130,7 @@
 
 /* For screen size < 300px */
 @media screen and (max-width: 300px) {
-    .content .decoration-top, .decoration-bottom{
+    .content .decoration-top, .content .decoration-bottom{
         display: none;
     }
 }
