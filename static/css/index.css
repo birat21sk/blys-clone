@@ -127,3 +127,10 @@
     margin-left: 120px;
   }
 }
+
+/* For screen size < 300px */
+@media screen and (max-width: 300px) {
+    .content .decoration-top, .decoration-bottom{
+        display: none;
+    }
+}
