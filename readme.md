@@ -1,5 +1,5 @@
 ## Blys Clone ##
 
-*** Landing page clone ***
+Landing page clone
 
 > https://app.getblys.com.au/
